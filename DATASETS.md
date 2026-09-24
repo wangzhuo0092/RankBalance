@@ -22,7 +22,6 @@ The loaders normalize model names, binary outcomes, ties, and rater IDs before
 fitting. Golden/control records are excluded where the source schema marks
 them. No generated split manifests or fitted outputs are included.
 
-Before public redistribution, add citations and upstream URLs from the paper's
-dataset section, and confirm that each dataset license permits bundling the CSV
-in this repository. If redistribution is restricted, remove that CSV and add a
-download/preparation command instead.
+These datasets originate from third-party projects and remain subject to their
+respective upstream terms. Dataset citations and provenance are provided in the
+associated paper.

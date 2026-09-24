@@ -6,8 +6,8 @@ deletion and label reversal. This repository contains the implementation,
 paper experiment runners, configurations, and the dataset files used by the
 included configurations.
 
-This source release intentionally contains **no computed results**. All CSV
-summaries, checkpoints, logs, tables, and figures must be regenerated under
+Computed results are not tracked in this repository. Running the experiment
+scripts writes summaries, checkpoints, logs, tables, and figures under
 `experiment_results/`, which is ignored by Git except for `.gitkeep`.
 
 ## Layout
@@ -118,8 +118,7 @@ The source code is distributed under the terms in [LICENSE](LICENSE).
 
 Dataset/rater mappings, dataset-size summaries, random seeds, and optimizer
 settings are under the [metadata directory](metadata/). Experiment runners
-record convergence status when executed; this source-only repository does not
-include outcomes.
+record convergence status in their generated outputs.
 
 ## Reproducibility notes
 
@@ -130,4 +129,4 @@ include outcomes.
   Victim-specific attacks recompute scores from each method at reported budget
   points.
 - RankBalance runners read the validation-selected gamma generated at runtime;
-  the source release does not prescribe or bundle a selected value.
+  the repository does not prescribe or bundle a selected value.
