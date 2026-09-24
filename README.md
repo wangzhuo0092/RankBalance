@@ -102,7 +102,7 @@ for the complete search space and selection rule.
 
 ## Tie handling
 
-A tie is expanded into two opposite binary outcomes with weight `0.5` each.
+A tie is expanded into two opposite binary outcomes with weight 0.5 each.
 The same weights enter the likelihood and perturbation regularizer. Attack
 budgets count original comparison records; the two expanded rows are always
 edited together.
@@ -114,12 +114,14 @@ The datasets originate from third-party projects and may retain their original
 terms. Verify each upstream license and the treatment of pseudonymous rater IDs
 before publishing a GitHub repository or archival release.
 
-Before publishing, choose the intended software license. The copied `LICENSE`
-currently reserves redistribution rights and is not an open-source license.
+Before publishing, choose the intended software license. The copied
+[LICENSE](LICENSE) currently reserves redistribution rights and is not an
+open-source license.
 
 Dataset/rater mappings, dataset-size summaries, random seeds, and optimizer
-settings are under `metadata/`. Experiment runners record convergence status
-when executed; this source-only repository does not include outcomes.
+settings are under the [metadata directory](metadata/). Experiment runners
+record convergence status when executed; this source-only repository does not
+include outcomes.
 
 ## Reproducibility notes
 
