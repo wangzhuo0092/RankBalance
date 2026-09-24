@@ -1,0 +1,31 @@
+paper_seeds:
+  validation: [42, 2023, 3407, 7919, 15401]
+  heldout_utility: [42, 2023, 3407, 7919, 15401]
+  component_ablation: [42, 2023, 3407, 7919, 15401]
+  gamma_sensitivity: [42, 2023, 3407, 7919, 15401]
+  random_attack_sources: [42, 2023, 3407, 7919, 15401]
+  synthetic_truth_start: 2023
+  synthetic_truth_repetitions: 30
+  bootstrap: 20260918
+
+rankbalance:
+  lambda_theta: 1.0
+  lambda_u: 1.0
+  mu: 2.0
+  regularizer: full
+
+optimizer:
+  method: L-BFGS-B
+  max_iterations: 1000
+  tolerance: 1.0e-8
+  max_line_search_steps: 50
+
+evaluation:
+  split: record-level
+  train_fraction_approx: 0.60
+  validation_fraction_approx: 0.20
+  test_fraction_approx: 0.20
+  preserve_training_model_coverage: true
+  top_k: [1, 3, 5]
+  attack_budget_fractions: [0.0005, 0.001, 0.0025, 0.005, 0.01, 0.02, 0.05]
+  dataset_bootstrap_repetitions: 10000

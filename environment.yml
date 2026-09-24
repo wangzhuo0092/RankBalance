@@ -1,0 +1,20 @@
+name: rank
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - scikit-learn
+  - tqdm
+  - pyyaml
+  - requests
+  - datasets
+  - huggingface_hub
+  - pyarrow

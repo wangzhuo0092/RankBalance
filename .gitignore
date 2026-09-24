@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+*.log
+*.pkl
+*.tmp
+*.bak
+*.orig
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated experiment artifacts
+experiment_results/*
+!experiment_results/.gitkeep
+
+# Native build and downloaded dependencies
+src/google_elo/build/
+src/google_elo/abseil-cpp/
+src/google_elo/eigen/
+src/google_elo/highway/
+src/google_elo/csv-parser/
+

@@ -1,0 +1,14 @@
+dataset_id,canonical_field,identifier_type,persistent,notes
+ihq_all,answerer,pseudonymous human annotator,true,Screened and unscreened CLIC/IHQ comparisons
+chatbot_arena_33k,answerer,pseudonymous human annotator,true,Many identifiers occur only once
+vision_arena,answerer,pseudonymous human annotator,true,Many identifiers occur only once
+search_arena,answerer,hashed human annotator,true,Many identifiers occur only once
+computer_agent_arena,answerer,pseudonymous user UUID,true,May span multiple sessionId values
+mt_bench,answerer,human judge label,true,Author and expert identifiers
+humaine,answerer,pseudonymous participant,true,Repeated short hash
+multipref_all,answerer,pseudonymous worker,true,Worker type is retained in the identifier prefix
+llm_judge_holdout,answerer,automatic judge model,true,Identifier denotes a judge model rather than a person
+hific,answerer,pseudonymous participant,true,Persistent user-study identifier
+conha,answerer,submission/session proxy,true,Timestamp-like proxy; not claimed to be a person ID
+wd,answerer,persistent rater identifier,true,Numeric pseudonymous identifier
+

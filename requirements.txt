@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+tqdm
+pyyaml
+requests
+datasets
+huggingface-hub
+pyarrow
+

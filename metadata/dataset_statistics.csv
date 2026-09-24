@@ -1,0 +1,12 @@
+dataset_id,comparisons_N,objects_M,raters_R,annotations_per_rater_min,annotations_per_rater_q25,annotations_per_rater_median,annotations_per_rater_q75,annotations_per_rater_max,singleton_raters,missing_like_rows,missing_like_rater_ids
+chatbot_arena_33k,33000,20,13383,1,1.0,1.0,2.0,380,9219,0,0
+vision_arena,29849,17,13655,1,1.0,1.0,2.0,125,8447,0,0
+search_arena,6693,11,3523,1,1.0,1.0,2.0,78,2357,0,0
+computer_agent_arena,3634,48,1128,1,1.0,1.0,2.0,183,785,0,0
+mt_bench,3355,6,65,4,42.0,44.0,44.0,205,0,0,0
+humaine,105220,27,1977,5,10.0,30.0,70.0,525,0,0,0
+multipref_all,30168,6,227,4,55.5,120.0,194.0,600,0,0,0
+llm_judge_holdout,4196,7,7,596,600.0,600.0,600.0,600,0,0,0
+hific,5218,9,20,5,157.5,337.0,370.25,376,0,0,0
+conha,1531,8,40,1,39.5,50.0,50.0,50,4,0,0
+wd,14987,29,5,2967,2978.0,2994.0,3016.0,3032,0,0,0

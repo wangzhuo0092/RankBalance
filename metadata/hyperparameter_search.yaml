@@ -1,0 +1,35 @@
+rankbalance:
+  gamma:
+    candidates: [0.0, 0.0001, 0.0003, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0]
+    validation_metric: decisive-comparison negative log-likelihood
+    validation_seeds: [42, 2023, 3407, 7919, 15401]
+    aggregation:
+      - average validation NLL over seeds within each dataset
+      - macro-average the resulting dataset-level values
+    selection_rule:
+      - identify the candidate with minimum dataset-macro validation NLL
+      - compute paired dataset-level NLL differences from that candidate
+      - retain candidates whose mean paired increase is no larger than one standard error of that increase
+      - select the largest retained gamma
+    test_or_attack_metrics_used_for_selection: false
+
+  lambda_theta:
+    candidates: [1.0]
+    selection_rule: fixed a priori; not tuned on reported data
+  lambda_u:
+    candidates: [1.0]
+    selection_rule: fixed a priori; not tuned on reported data
+  mu:
+    candidates: [2.0]
+    selection_rule: fixed a priori; not tuned on reported data
+  regularizer:
+    candidates: [full]
+    selection_rule: the full model is prespecified; component variants are ablations
+
+fit_acceptance:
+  requirement: every validation fit must return finite parameters and report optimizer success
+  handling: abort selection if any candidate fit is non-convergent
+
+output_policy:
+  selected_values: generated only after execution under experiment_results/
+  precomputed_selection_results_in_repository: false

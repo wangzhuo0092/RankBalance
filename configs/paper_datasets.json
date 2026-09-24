@@ -1,0 +1,60 @@
+{
+  "defaults": {
+    "enabled": true,
+    "top_ks": [1, 3, 5, 10, 20],
+    "attack_types": ["delete", "flip"],
+    "max_drop_fraction": 0.01,
+    "pairs_to_verify": 10,
+    "influence_method": "1sn"
+  },
+  "datasets": {
+    "ihq_all": {
+      "label": "IHQ-all",
+      "csv": "projects/clic2024/data/2AFC_google_elo.csv"
+    },
+    "chatbot_arena_33k": {
+      "label": "Chatbot Arena 33K",
+      "csv": "projects/chatbot_arena_33k/data/preferences.csv"
+    },
+    "vision_arena": {
+      "label": "VisionArena-Battle",
+      "csv": "projects/vision_arena/data/preferences.csv"
+    },
+    "search_arena": {
+      "label": "Search Arena v1-7k",
+      "csv": "projects/search_arena/data/preferences.csv"
+    },
+    "computer_agent_arena": {
+      "label": "Computer Agent Arena",
+      "csv": "projects/computer_agent_arena/data/preferences.csv"
+    },
+    "mt_bench": {
+      "label": "MT-Bench",
+      "csv": "projects/mtbench/data/human_judgments.csv"
+    },
+    "humaine": {
+      "label": "HUMAINE",
+      "csv": "projects/prolific/data/feedback_comparisons.csv"
+    },
+    "multipref_all": {
+      "label": "MultiPref-all",
+      "csv": "projects/multipref/data/multipref_all.csv"
+    },
+    "llm_judge_holdout": {
+      "label": "LLM Judge Holdout",
+      "csv": "projects/llm_judge_holdout/data/preferences.csv"
+    },
+    "hific": {
+      "label": "HiFiC",
+      "csv": "projects/hific/data/userstudy_google_elo.csv"
+    },
+    "conha": {
+      "label": "ConHa",
+      "csv": "projects/conha/data/answers.csv"
+    },
+    "wd": {
+      "label": "WD",
+      "csv": "projects/WD/data/answers.csv"
+    }
+  }
+}
