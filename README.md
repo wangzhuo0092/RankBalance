@@ -111,12 +111,10 @@ edited together.
 
 See [DATASETS.md](DATASETS.md) for included paths and basic provenance notes.
 The datasets originate from third-party projects and may retain their original
-terms. Verify each upstream license and the treatment of pseudonymous rater IDs
-before publishing a GitHub repository or archival release.
+terms; consult the corresponding upstream sources before reuse or
+redistribution.
 
-Before publishing, choose the intended software license. The copied
-[LICENSE](LICENSE) currently reserves redistribution rights and is not an
-open-source license.
+The source code is distributed under the terms in [LICENSE](LICENSE).
 
 Dataset/rater mappings, dataset-size summaries, random seeds, and optimizer
 settings are under the [metadata directory](metadata/). Experiment runners
